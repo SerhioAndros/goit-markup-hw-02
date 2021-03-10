@@ -1,5 +1,2 @@
-# goit-markup-hw-01
+# goit-markup-hw-02
 Repository for projects, Bootcamp, GoIT
-
-https://serhioandros.github.io/goit-markup-hw-01/
-Check HW
