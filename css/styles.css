@@ -1,0 +1,90 @@
+:root {
+  --bg-color-light: #ffffff;
+  --bg-color-dark: #2f303a;
+  --bg-color-accent: #f5f4fa;
+  --text-color-main: #212121;
+  --text-color-secondary: #757575;
+  --text-color-accent: #2196f3;
+  --text-color-additional: #ffffff;
+  --text-color-special: rgba(255, 255, 255, 0.6);
+}
+body {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-main);
+}
+body a {
+  text-decoration: none;
+  color: #212121;
+}
+
+/* разметка стилей хедера */
+.contacts-top a {
+  color: var(--text-color-secondary);
+}
+.logo-web,
+.site-nav a:hover,
+.site-nav a:focus,
+.contacts-top a:hover,
+.contacts-top a:focus,
+.active a {
+  color: var(--text-color-accent);
+}
+.site-nav,
+.contacts-top,
+.order-button,
+.filter-button {
+  cursor: pointer;
+}
+
+/* разметка стилей мейн основной страницы */
+.hero {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-additional);
+}
+.features p,
+.team-members p {
+  color: var(--text-color-secondary);
+}
+.team {
+  background-color: var(--bg-color-accent);
+}
+.order-button {
+  background-color: var(--text-color-accent);
+  color: var(--text-color-additional);
+}
+.order-button:hover,
+.order-button:focus {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-accent);
+}
+
+/* разметка стилей мейн портфолио */
+.portfolio-list h2 {
+  color: var(--text-color-secondary);
+}
+.filter-button {
+  background-color: var(--bg-color-accent);
+  color: var(--text-color-main);
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--text-color-accent);
+  color: var(--text-color-additional);
+}
+
+/* разметка стилей футера */
+.contacts-footer {
+  background-color: var(--bg-color-dark);
+}
+.contacts-footer .logo-studio,
+.address {
+  color: var(--text-color-additional);
+}
+.contacts-bottom a {
+  text-decoration: none;
+  color: var(--text-color-special);
+}
+.contacts-bottom a:hover,
+.contacts-bottom a:focus {
+  color: var(--text-color-additional);
+}
