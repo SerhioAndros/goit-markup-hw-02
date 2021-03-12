@@ -18,6 +18,9 @@ body a {
   text-decoration: none;
   color: #212121;
 }
+body ul {
+  list-style-type: none;
+} 
 
 /* разметка стилей хедера */
 .logo-web,
