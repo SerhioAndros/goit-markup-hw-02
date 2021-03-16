@@ -7,32 +7,29 @@
   --text-color-accent: #2196f3;
   --text-color-additional: #ffffff;
   --text-color-special: rgba(255, 255, 255, 0.6);
+  --button-color-hover: #188CE8;
 }
 body {
   background-color: var(--bg-color-light);
   color: var(--text-color-main);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
-body a {
+a {
   text-decoration: none;
   color: #212121;
 }
-body ul {
-  list-style-type: none;
-} 
 
-/* разметка стилей хедера */
+/* ======= разметка стилей хедера */
 .logo-web,
 .logo-studio {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
 }
 .nav-link {
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -40,7 +37,6 @@ body ul {
 .contacts-top a {
   color: var(--text-color-secondary);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -53,10 +49,13 @@ body ul {
   color: var(--text-color-accent);
 }
 
-/* разметка стилей мейн основной страницы */
+/* ======= разметка стилей мейн основной страницы */
+/* ======= HERO */
 .hero {
   background-color: var(--bg-color-dark);
   color: var(--text-color-additional);
+}
+.hero h1{
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -71,48 +70,50 @@ body ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 .order-button:hover,
 .order-button:focus {
-  background-color: var(--bg-color-light);
-  color: var(--text-color-accent);
+  background-color: var(--button-color-hover);
 }
-.features h2,
-.services h2,
-.team h2 {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+
+/* ======= FEATURES */
+.invisible-text {
+  color: var(--bg-color-light);
 }
-.features h3 {
+.main-features {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.features p {
-  font-size: 14px;
+.feature-description {
   line-height: 1.71;
 }
-.features p,
-.team-members p {
-  color: var(--text-color-secondary);
-}
+/* ======= TEAM */
 .team {
   background-color: var(--bg-color-accent);
 }
-.team h3 {
+.team-name {
   font-weight: 500;
+}
+.team-name,
+.team-position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-.team p {
-  font-size: 16px;
-  line-height: 1.19;
+/* ======= COMMON */
+.section-header {
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
+}
+.feature-description,
+.team-members p {
+  color: var(--text-color-secondary);
 }
 
-/* разметка стилей мейн портфолио */
+/* ======= разметка стилей мейн портфолио */
 .filter-button {
   background-color: var(--bg-color-accent);
   color: var(--text-color-main);
@@ -126,42 +127,37 @@ body ul {
   background-color: var(--text-color-accent);
   color: var(--text-color-additional);
 }
-.portfolio-list h2 {
+.work-name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.portfolio-list p {
+.work-type {
   color: var(--text-color-secondary);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
 
-/* общие элементы для мейн и портфолио */
+/* ======= общие элементы для мейн и портфолио */
 .order-button,
 .filter-button {
   cursor: pointer;
   font-family: inherit;
 }
 
-/* разметка стилей футера */
+/* ======= разметка стилей футера */
 .contacts-footer {
   background-color: var(--bg-color-dark);
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
 }
+
 .contacts-footer .logo-studio,
 .address {
-  color: var(--text-color-additional);
   font-style: normal;
-}
-.contacts-bottom a {
-  text-decoration: none;
-  color: var(--text-color-special);
-}
-.contacts-bottom a:hover,
-.contacts-bottom a:focus {
   color: var(--text-color-additional);
+}
+.address a {
+  color: var(--text-color-special);
 }
